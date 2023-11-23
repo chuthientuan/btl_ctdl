@@ -1,0 +1,16 @@
+Ho va ten: Linh
+So dien thoai: 95
+Ma khach hang: 25
+
+Ho va ten: Tay
+So dien thoai: 0980
+Ma khach hang: 28
+
+Ho va ten: Tuan
+So dien thoai: 96
+Ma khach hang: 24
+
+Ho va ten: Vuong
+So dien thoai: 0000
+Ma khach hang: 2
+
