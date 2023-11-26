@@ -35,15 +35,15 @@ class CustomerManager{
 		//Thuat toan quicksort theo ma KH
 		int partitionCode(int l,int r){
 			int key=v[r].customer_code;     //Dat phan tu cuoi cung lam chot
-			int left=l-1;
-			for(int right=l;right<=r-1;right++){
-				if(v[right].customer_code<key){
-					left++;
-					swap(v[left],v[right]);
+			int i=l-1;
+			for(int j=l;j<=r-1;j++){
+				if(v[j].customer_code<key){
+					i++;
+					swap(v[i],v[j]);
 				}
 			}
-			swap(v[left+1],v[r]);
-			return (left+1);
+			swap(v[i+1],v[r]);
+			return (i+1);
 		}
 		void quickSort(int l,int r){
 			if(l<r){
@@ -55,15 +55,15 @@ class CustomerManager{
 		//Thuat toan quicksort theo ho ten KH
 		int partitionName(int l,int r){
 			string key=v[r].fullname;     //Dat phan tu cuoi cung lam chot
-			int left=l-1;
-			for(int right=l;right<=r-1;right++){
-				if(v[right].fullname<key){
-					left++;
-					swap(v[left],v[right]);
+			int i=l-1;
+			for(int j=l;j<=r-1;j++){
+				if(v[j].fullname<key){
+					i++;
+					swap(v[i],v[j]);
 				}
 			}
-			swap(v[left+1],v[r]);
-			return (left+1);
+			swap(v[i+1],v[r]);
+			return (i+1);
 		}
 		void quicksort(int l,int r){
 			if(l<r){
